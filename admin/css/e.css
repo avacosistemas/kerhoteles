@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+.ordenar {
+	background-image: url(../imagenes/updown2.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+	cursor: move;
+}

@@ -1,0 +1,1874 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap");
+body {
+  padding: 0px;
+  margin: 0;
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+  color: #211d1f;
+}
+
+h1, h2, h3, h4, p, ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+li {
+  list-style: none;
+}
+
+.clear {
+  clear: both;
+}
+
+button {
+  outline: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+  outline: none !important;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.trans, header, header .menu li a, .buscador input[type="submit"], .buscador2 input[type="submit"], .buscador_detalle input[type="submit"], .stay a, .hoteles .boton1, footer .col1 a, footer ul li a, footer .col5 .redes li img, .habitaciones .blanco a, .habitaciones .gris a, .contacto_ker .col1 a, .contacto_ker .col2 input[type="submit"], .hoteles2 img, .promociones a, .spa a, .halo a, .salones a, .spa2 a {
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 21px 45px 21px 45px;
+  z-index: 999;
+}
+
+header .logo img {
+  width: 180px;
+  height: auto;
+}
+
+header .redes {
+  padding-top: 21px;
+}
+
+header .redes li {
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: 15px;
+}
+
+header .redes li img {
+  width: 31px;
+  height: auto;
+}
+
+header .menu {
+  text-align: center;
+  border-bottom: solid 1px #fff;
+}
+
+header .menu li {
+  display: inline-block;
+  padding: 10px 0 10px 0px;
+}
+
+header .menu li a {
+  color: #fff;
+  font-size: 15px;
+  padding: 10px;
+}
+
+header .menu li a:hover {
+  background-color: #000;
+}
+
+header .col3 {
+  text-align: right;
+}
+
+header .col3 a {
+  color: #fff;
+  font-size: 16px;
+}
+
+.fondoheader {
+  background-color: #000;
+  padding-bottom: 29px;
+}
+
+.fixbuscador {
+  position: fixed !important;
+  top: 205px;
+  width: 100%;
+  z-index: 9;
+  height: 85px;
+}
+
+.ui-widget-header {
+  background-color: #000;
+  border: none;
+}
+
+.ui-datepicker table {
+  background-color: #000;
+}
+
+.ui-widget-content {
+  background-color: #000;
+  border: none;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background-color: #000;
+  border: none;
+  color: #fff;
+}
+
+.ui-datepicker td span, .ui-datepicker td a:hover {
+  color: #211d1f;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+  background-image: url(../img/slider_ant.svg);
+  background-repeat: no-repeat;
+  background-size: 21px;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.ui-datepicker .ui-datepicker-next {
+  background-image: url(../img/slider_sig.svg);
+  background-repeat: no-repeat;
+  background-size: 21px;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+#ui-datepicker-div {
+  z-index: 99999999 !important;
+}
+
+.buscador, .buscador2 {
+  background-color: #211d1f;
+  padding: 21px;
+  text-align: center;
+  width: 100%;
+  left: 0;
+}
+
+.buscador .item, .buscador2 .item {
+  display: inline-block;
+  margin-right: 21px;
+  vertical-align: top;
+}
+
+.buscador input[type="text"], .buscador select, .buscador2 input[type="text"], .buscador2 select {
+  background-color: transparent;
+  padding: 10px;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-bottom: solid 1px #fff;
+  color: #fff;
+}
+
+.buscador input[type="submit"], .buscador2 input[type="submit"] {
+  color: #211d1f;
+  border: none;
+  display: block;
+  padding: 10px 21px 10px 21px;
+  font-weight: 700;
+  background-color: #fff;
+}
+
+.buscador input[type="submit"]:hover, .buscador2 input[type="submit"]:hover {
+  background-color: #211d1f;
+  color: #fff;
+}
+
+.buscador input[type="text"], .buscador2 input[type="text"] {
+  background-image: url(../img/calendar.png);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  padding-right: 45px;
+}
+
+.buscador .nice-select, .buscador2 .nice-select {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-bottom: solid 1px #fff;
+  border-radius: 0;
+}
+
+.buscador .nice-select .list, .buscador2 .nice-select .list {
+  background-color: #211d1f;
+  border: none;
+  border-radius: 0;
+  border-bottom: solid 1px #fff;
+}
+
+.buscador .nice-select .option:hover, .buscador .nice-select .option.focus, .buscador .nice-select .option.selected.focus, .buscador2 .nice-select .option:hover, .buscador2 .nice-select .option.focus, .buscador2 .nice-select .option.selected.focus {
+  background-color: #000;
+  color: #fff;
+}
+
+.buscador_detalle {
+  background-color: #211d1f;
+  padding: 21px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.buscador_detalle .item {
+  width: 100%;
+  margin-bottom: 21px;
+  vertical-align: top;
+}
+
+.buscador_detalle input[type="text"], .buscador_detalle select, .buscador_detalle input[type="email"], .buscador_detalle textarea {
+  background-color: transparent;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-bottom: solid 1px #fff;
+  color: #fff;
+}
+
+.buscador_detalle input[type="submit"] {
+  color: #211d1f;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px 21px 10px 21px;
+  font-weight: 700;
+  background-color: #fff;
+}
+
+.buscador_detalle input[type="submit"]:hover {
+  background-color: #211d1f;
+  color: #fff;
+}
+
+.buscador_detalle input[type="text"] {
+  background-image: url(../img/calendar.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 95%;
+  padding-right: 45px;
+}
+
+.buscador_detalle .nice-select {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 16px;
+  border-bottom: solid 1px #fff;
+  border-radius: 0;
+}
+
+.buscador_detalle .nice-select .list {
+  background-color: #211d1f;
+  border: none;
+  border-radius: 0;
+  border-bottom: solid 1px #fff;
+}
+
+.buscador_detalle .nice-select .option:hover, .buscador_detalle .nice-select .option.focus, .buscador_detalle .nice-select .option.selected.focus {
+  background-color: #000;
+  color: #fff;
+}
+
+.buscador_detalle p {
+  padding-top: 21px;
+  font-size: 14px;
+  padding-top: 21px;
+}
+
+.buscador2 {
+  position: relative;
+}
+
+.buscador2 li:first-child {
+  display: none;
+}
+
+.stay {
+  background-image: url(../img/01Home/Ker_Historic_SanTelmo_BsAs_Fondo_Stayawhile.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.stay h1 {
+  font-weight: 300;
+  font-size: 43px;
+  padding-top: 80px;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.stay p {
+  font-size: 15px;
+  text-align: center;
+  padding: 21px 0 21px 0;
+}
+
+.stay h2 {
+  font-size: 21px;
+  text-align: center;
+  padding-bottom: 21px;
+}
+
+.stay h2 span {
+  border-bottom: solid 1px #fff;
+}
+
+.stay a {
+  background-color: #211d1f;
+  color: #fff;
+  width: 160px;
+  font-size: 15px;
+  display: block;
+  margin: 21px auto auto auto;
+  text-align: center;
+  padding: 10px 15px 10px 15px;
+}
+
+.stay a:hover {
+  opacity: 0.8;
+}
+
+.stay .foto {
+  margin: 31px 0 31px 0;
+  max-width: 80%;
+  float: right;
+}
+
+.stay .col2 {
+  padding-right: 0;
+}
+
+.stay .pad {
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.casco {
+  text-align: center;
+}
+
+.casco h1 {
+  font-size: 31px;
+  text-align: center;
+  font-weight: 300;
+  font-style: italic;
+  padding: 31px;
+  letter-spacing: 2px;
+}
+
+.trip {
+  padding: 45px 0 45px 0;
+}
+
+.trip .col-md-6 {
+  padding: 0;
+  margin: 0;
+}
+
+.banner1 {
+  margin-bottom: 45px;
+}
+
+.hoteles h1 {
+  font-size: 31px;
+  text-align: center;
+  font-weight: 300;
+  font-style: italic;
+  padding: 31px 31px 15px 31px;
+  letter-spacing: 2px;
+}
+
+.hoteles .col-md-3 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.hoteles .col-md-3 img {
+  display: block;
+  margin: auto;
+  width: 160px;
+}
+
+.hoteles .col-md-3 .barrita {
+  height: 1px;
+  width: 51px;
+  margin: 31px auto 15px auto;
+  background-color: #211d1f;
+}
+
+.hoteles .col-md-3 h2 {
+  text-align: center;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.hoteles .col1 {
+  background-color: #dddddb;
+}
+
+.hoteles .col2 {
+  background-color: #c9c9c7;
+}
+
+.hoteles .boton1 {
+  color: #211d1f;
+  min-height: 331px;
+  display: block;
+  padding: 80px;
+}
+
+.hoteles .boton1:hover {
+  background-color: #211d1f;
+  color: #fff;
+}
+
+.hoteles .boton1:hover .barrita {
+  background-color: #fff;
+}
+
+.hoteles p {
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 31px;
+}
+
+.trip {
+  text-align: center;
+}
+
+.trip .icono {
+  display: block;
+  margin: auto;
+  margin-top: 31px;
+}
+
+.trip h1 {
+  font-style: italic;
+  font-size: 61px;
+  padding: 15px 0 15px 0;
+  font-weight: 300;
+}
+
+.trip h1 span {
+  display: block;
+}
+
+.trip .barrita {
+  height: 1px;
+  background-color: #211d1f;
+  width: 120px;
+  margin: 10px auto 10px auto;
+}
+
+footer {
+  background-image: url(../img/KER_HOTELES_Website_FOOTER.jpg);
+  font-size: 14px;
+  background-size: cover;
+  color: #fff;
+}
+
+footer .col1 {
+  padding-top: 31px;
+  padding-left: 45px;
+}
+
+footer .col1 p {
+  color: #fff;
+  margin-bottom: 21px;
+}
+
+footer .col1 a {
+  color: #fff;
+  display: block;
+}
+
+footer .col1 a:hover {
+  color: #211d1f;
+}
+
+footer .col2 {
+  padding-top: 31px;
+}
+
+footer .col3 {
+  padding-top: 31px;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: #fff;
+}
+
+footer ul li a:hover {
+  color: #211d1f;
+}
+
+footer .col4 {
+  background-color: #000;
+}
+
+footer .col4 img {
+  display: block;
+  width: 231px;
+  margin: 45px auto 45px auto;
+}
+
+footer .col-md-3 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 20%;
+}
+
+footer .col5 .redes li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer .col5 .redes li img {
+  width: 31px;
+  height: auto;
+  filter: grayscale(1);
+  filter: invert(1);
+}
+
+footer .col5 .redes li img:hover {
+  opacity: 0.8;
+}
+
+.copy {
+  padding: 10px;
+  background-color: #939498;
+  text-align: center;
+}
+
+.copy a {
+  color: #fff;
+  font-style: italic;
+}
+
+.volumen {
+  position: absolute;
+  bottom: 200px;
+  right: 51px;
+  z-index: 99999999999999999;
+  color: #000;
+  width: 20px;
+  height: 20px;
+  font-size: 45px;
+  cursor: pointer;
+}
+
+.vol1 {
+  display: block;
+}
+
+.vol2 {
+  display: none;
+}
+
+.videohome {
+  position: relative;
+}
+
+#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+  width: 55px;
+  height: 36px;
+  position: relative;
+  margin: 9px 0 0 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 33px;
+  background: #000;
+  border-radius: 16px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 12px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 22px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 32px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 28px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 28px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.iconomobile {
+  float: right;
+  right: 0px;
+  z-index: 9999;
+  position: absolute;
+  top: 10px;
+  display: none;
+}
+
+.botonreservar, .botonreservar2 {
+  display: none;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #211d1f;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+.slick-slide img {
+  margin: auto;
+}
+
+.slick-prev {
+  position: absolute;
+  top: 45%;
+  left: 15px;
+  width: 16px;
+  height: 35px;
+  border: none;
+  background-color: #211d1f;
+  border-radius: 60px;
+  color: transparent;
+  z-index: 9;
+  background-repeat: no-repeat;
+  background-image: url("../img/flechaizq.png");
+  background-size: 10px;
+  background-position: center;
+  width: 36px;
+}
+
+.slick-next {
+  position: absolute;
+  top: 45%;
+  right: 15px;
+  width: 16px;
+  height: 35px;
+  border: none;
+  background-color: #211d1f;
+  border-radius: 60px;
+  z-index: 9;
+  background-repeat: no-repeat;
+  color: transparent;
+  background-image: url("../img/flechader.png");
+  background-size: 10px;
+  background-position: center;
+  width: 36px;
+}
+
+.slick-dots {
+  display: none !important;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  opacity: 0.8;
+}
+
+.habitaciones .col-md-6 {
+  padding: 31px;
+  margin: 0;
+}
+
+.habitaciones .col-md-6 img {
+  width: 100%;
+}
+
+.habitaciones .blanco h1 {
+  color: #211d1f;
+  font-size: 43px;
+  margin-bottom: 15px;
+  font-style: italic;
+  text-align: center;
+  padding-top: 100px;
+  font-weight: 300;
+}
+
+.habitaciones .blanco p {
+  font-size: 14px;
+  color: #211d1f;
+  text-align: center;
+  padding: 0 100px 0 100px;
+}
+
+.habitaciones .blanco a {
+  background-color: #211d1f;
+  color: #fff;
+  width: 160px;
+  font-size: 15px;
+  display: block;
+  margin: 21px auto auto auto;
+  text-align: center;
+  padding: 10px 15px 10px 15px;
+}
+
+.habitaciones .blanco a:hover {
+  opacity: 0.8;
+}
+
+.habitaciones .gris {
+  background-color: #211d1f;
+}
+
+.habitaciones .gris h1 {
+  color: #fff;
+  font-size: 43px;
+  margin-bottom: 15px;
+  font-style: italic;
+  text-align: center;
+  padding-top: 100px;
+  font-weight: 300;
+}
+
+.habitaciones .gris p {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  padding: 0 100px 0 100px;
+}
+
+.habitaciones .gris a {
+  background-color: #fff;
+  color: #211d1f;
+  width: 160px;
+  font-size: 15px;
+  display: block;
+  margin: 21px auto auto auto;
+  text-align: center;
+  padding: 10px 15px 10px 15px;
+}
+
+.habitaciones .gris a:hover {
+  opacity: 0.8;
+}
+
+.cabcontacto img {
+  width: 100%;
+}
+
+.contacto_ker {
+  background-image: url(../img/KER_Website_CONTACTO_Fondo.jpg);
+  background-size: cover;
+  padding-top: 31px;
+  padding-bottom: 31px;
+}
+
+.contacto_ker p {
+  color: #fff;
+  font-size: 15px;
+  padding-left: 60px;
+  padding-bottom: 60px;
+}
+
+.contacto_ker .col-md-6 {
+  padding: 0;
+  margin: 0;
+}
+
+.contacto_ker img {
+  width: 95%;
+}
+
+.contacto_ker .col1 {
+  padding: 121px 31px 31px 31px;
+}
+
+.contacto_ker .col1 a {
+  color: #fff;
+}
+
+.contacto_ker .col1 a:hover {
+  color: #211d1f;
+}
+
+.contacto_ker .col1 .icono {
+  background-color: #000;
+  padding: 31px 21px 31px 21px;
+}
+
+.contacto_ker .col1 .icono img {
+  display: block;
+  margin: auto;
+}
+
+.contacto_ker .col1 .item {
+  margin-bottom: 60px;
+}
+
+.contacto_ker .col1 .item li {
+  font-size: 15px;
+}
+
+.contacto_ker .col1 .item a {
+  color: #000;
+}
+
+.contacto_ker .col1 .item a:hover {
+  opacity: 0.8;
+}
+
+.contacto_ker .col1 .item i {
+  margin-right: 10px;
+}
+
+.contacto_ker .col2 {
+  padding: 60px;
+  background-color: #211d1f;
+  color: #fff;
+  padding-bottom: 70px;
+}
+
+.contacto_ker .col2 h1 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 31px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.contacto_ker .col2 h1 span {
+  border-bottom: solid 1px #fff;
+}
+
+.contacto_ker .col2 label {
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.contacto_ker .col2 input[type="text"], .contacto_ker .col2 input[type="email"], .contacto_ker .col2 textarea {
+  border: solid 1px #fff;
+  color: #000;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.contacto_ker .col2 textarea {
+  margin-bottom: 15px;
+}
+
+.contacto_ker .col2 a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.contacto_ker .col2 a:hover {
+  text-decoration: none;
+}
+
+.contacto_ker .col2 input[type="submit"] {
+  color: #211d1f;
+  border: none;
+  display: block;
+  padding: 10px 21px 10px 21px;
+  font-weight: 700;
+  background-color: #fff;
+}
+
+.contacto_ker .col2 input[type="submit"]:hover {
+  background-color: #211d1f;
+  color: #fff;
+}
+
+.contacto_ker .nice-select {
+  width: 100% !important;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.contacto_ker .nice-select.open .list {
+  width: 100%;
+}
+
+.habitaciones_detalle {
+  padding: 31px 0 31px 0;
+  min-height: 558px;
+}
+
+.habitaciones_detalle h1 {
+  font-size: 31px;
+  margin-bottom: 21px;
+}
+
+.habitaciones_detalle h1 span {
+  font-weight: 800;
+}
+
+.habitaciones_detalle h2 {
+  font-size: 31px;
+  margin-top: 21px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 21px;
+  padding-bottom: 10px;
+}
+
+.habitaciones_detalle h2 span {
+  font-weight: 800;
+}
+
+.habitaciones_detalle .borde {
+  border-right: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.habitaciones_detalle p {
+  font-size: 14px;
+  padding-bottom: 45px;
+}
+
+.habitaciones_detalle .foto {
+  margin-top: 31px;
+}
+
+.habitaciones_detalle h3 {
+  font-size: 26px;
+  margin-top: 0px;
+  text-align: left;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  margin-bottom: 21px;
+  padding-bottom: 10px;
+}
+
+.habitaciones_detalle h3 span {
+  font-weight: 800;
+}
+
+#CDSWIDSSP {
+  width: 80% !important;
+  margin: 15px auto auto auto !important;
+}
+
+.hoteles2 img {
+  width: 100%;
+  filter: grayscale(100);
+}
+
+.hoteles2 img:hover {
+  filter: grayscale(0);
+}
+
+.promociones {
+  padding-bottom: 31px;
+  padding-top: 31px;
+}
+
+.promociones a {
+  width: 80%;
+  margin: auto;
+  border: solid 1px #000;
+  color: #000;
+  margin-bottom: 31px;
+  padding: 10px 15px 10px 15px;
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.promociones a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.promociones h1 {
+  letter-spacing: 2px;
+  margin-top: 31px;
+  margin-bottom: 21px;
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+.promociones h1 span {
+  font-style: italic;
+}
+
+.news {
+  background-image: url(../img/KER_Promociones_Rose_Halo_Modulo-gris.jpg);
+}
+
+.news .pad {
+  padding: 31px;
+  text-align: center;
+}
+
+.news h1 {
+  color: #fff;
+}
+
+.news p {
+  color: #fff;
+  font-size: 14px;
+  padding: 21px;
+}
+
+.news input[type="email"] {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border: solid 1px #fff;
+  color: #fff;
+  font-size: 16px;
+}
+
+.news input[type="button"] {
+  background-color: #000;
+  color: #fff;
+  padding: 11px 16px 11px 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.news .col-md-6 {
+  padding: 0;
+  margin: 0;
+}
+
+.promotitulo {
+  font-size: 16px;
+  border-bottom: solid 1px #211d1f;
+  padding-bottom: 10px;
+  margin-top: 31px;
+  margin-bottom: 31px;
+}
+
+.spa h1 {
+  font-style: italic;
+  font-size: 31px;
+  text-align: center;
+  margin-bottom: 21px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.spa a {
+  display: block;
+  width: 200px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px 10px 15px;
+  margin: auto;
+}
+
+.spa a:hover {
+  background-color: #211d1f;
+}
+
+.spa img {
+  width: 100%;
+}
+
+.spa .pad {
+  padding: 31px;
+}
+
+.halo h1 {
+  font-style: italic;
+  font-size: 31px;
+  background-color: #000;
+  padding: 45px;
+  color: #fff;
+  text-align: center;
+}
+
+.halo a {
+  display: inline-block;
+  width: 200px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px 10px 15px;
+  margin-right: 15px;
+}
+
+.halo a:hover {
+  background-color: #211d1f;
+}
+
+.halo img {
+  width: 100%;
+}
+
+.halo .pad {
+  padding: 31px;
+}
+
+.halo .item {
+  position: relative;
+}
+
+.halo .item .titulo {
+  position: absolute;
+  bottom: 200px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+}
+
+.halo .item .botones {
+  position: absolute;
+  bottom: 60px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.salones {
+  text-align: center;
+  background-color: #000;
+}
+
+.salones img {
+  width: 100%;
+}
+
+.salones h1 {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-style: italic;
+  font-size: 31px;
+  text-align: center;
+  padding-top: 121px;
+  margin-bottom: 15px;
+}
+
+.salones p {
+  color: #fff;
+  font-size: 15px;
+  width: 531px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 31px;
+}
+
+.salones a {
+  display: inline-block;
+  width: 231px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  padding: 10px 15px 10px 15px;
+  margin-right: 15px;
+}
+
+.salones a:hover {
+  background-color: #211d1f;
+  color: #fff;
+}
+
+.salones .fotos ul li {
+  display: inline-block;
+  width: 19.8%;
+}
+
+.salones .fotos ul li img {
+  width: 100%;
+}
+
+.salones .col-md-6 {
+  padding: 0;
+  margin: 0;
+}
+
+.salones .col-md-6 img {
+  display: block;
+  width: 100%;
+}
+
+.salones ul {
+  padding: 31px;
+  text-align: center;
+}
+
+.salones ul li {
+  display: inline-block;
+  margin: 0 21px 0 0;
+}
+
+.salones ul li span {
+  display: block;
+  margin: 5px 0 0 0;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.salones ul li img {
+  width: 45px !important;
+  height: auto;
+  margin: auto;
+}
+
+.salones2 {
+  background-color: #fff;
+  color: #000;
+  padding: 61px 31px 31px 31px;
+}
+
+.salones2 h1 {
+  font-size: 31px;
+  font-style: italic;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.salones2 p {
+  text-align: center;
+  max-width: 700px;
+  font-size: 14px;
+  margin: auto auto 45px auto;
+}
+
+.bookingform {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  width: 300px;
+  background-color: rgba(238, 237, 245, 0.9);
+  padding: 15px;
+}
+
+.bookingform h1 {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.bookingform h2 {
+  font-size: 37px;
+  cursor: pointer;
+}
+
+.bookingform h3 {
+  font-size: 11px;
+}
+
+.bookingform .fecha {
+  float: left;
+  padding: 15px;
+  background-color: #d6d5dd;
+  text-align: center;
+  margin: 0 10px 10px 0;
+  width: 125px;
+}
+
+.bookingform .fecha:hover {
+  background-color: #211D1F;
+  color: #fff;
+}
+
+.bookingform input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  text-align: center !important;
+  width: 100%;
+  padding: 10px;
+  display: block;
+  font-size: 14px;
+}
+
+.bookingform select {
+  border: none;
+  background-color: #D6D5DD;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.bookingform .nice-select {
+  background-color: #D6D5DD !important;
+  width: 100% !important;
+  margin-bottom: 10px;
+}
+
+.bookingform .x {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  display: none;
+}
+
+.bookingboton {
+  position: fixed;
+  top: 157px;
+  right: 56px;
+  z-index: 999999;
+  background-color: #fff;
+  color: #000;
+  display: none;
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.bookingclass {
+  display: none;
+  position: fixed;
+  top: 143px;
+  right: 56px;
+  z-index: 9999999;
+  left: auto;
+}
+
+.kerhoteles {
+  padding: 31px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.kerhoteles h1 {
+  font-style: italic;
+  font-size: 31px;
+  text-align: center;
+  margin-bottom: 21px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.kerhoteles p {
+  font-size: 14px;
+}
+
+.spa2 h1 {
+  font-size: 31px;
+  text-align: center;
+  font-weight: 300;
+  font-style: italic;
+  padding: 31px;
+  letter-spacing: 2px;
+}
+
+.spa2 .col-md-3 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.spa2 .col-md-3 img {
+  display: block;
+  margin: auto;
+  width: 221px;
+}
+
+.spa2 .col-md-3 h2 {
+  text-align: center;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.spa2 .col1 {
+  background-color: #91CDA7;
+  /*a:hover{background-color:#203629;}*/
+}
+
+.spa2 .col1 a {
+  color: #211d1f;
+}
+
+.spa2 .col1 .barrita {
+  height: 1px;
+  width: 51px;
+  margin: 31px auto 15px auto;
+  background-color: #203629;
+}
+
+.spa2 .col2 {
+  background-color: #203629;
+  /*a:hover{background-color:#91CDA7;}*/
+}
+
+.spa2 .col2 a {
+  color: #91CDA7;
+}
+
+.spa2 .col2 .barrita {
+  height: 1px;
+  width: 51px;
+  margin: 31px auto 15px auto;
+  background-color: #91CDA7;
+}
+
+.spa2 a {
+  min-height: 331px;
+  display: block;
+  padding: 80px;
+}
+
+.spa2 a:hover {
+  opacity: 0.8;
+}
+
+.spa2 .boton {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 21px 10px 21px;
+  width: 100px;
+  text-align: center;
+  display: block;
+  margin: 31px auto auto auto;
+}
+
+.botonconsulta {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 21px 10px 21px;
+  width: 100px;
+  text-align: center;
+  display: block;
+  margin: 0 auto 61px auto;
+}
+
+.botonconsulta:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.iconotel {
+  background-image: url(../img/KER_SitioWeb_Logo_Telefono.png);
+  width: 150px;
+  float: right;
+  padding-bottom: 3px;
+  background-repeat: no-repeat;
+  display: block;
+  padding-left: 15px;
+}
+
+.iconowhat {
+  background-image: url(../img/KER_SitioWeb_Logo_Whatsapp.png);
+  clear: both;
+  margin-top: 6px;
+  width: 159px;
+  float: right;
+  padding-bottom: 0px;
+  background-repeat: no-repeat;
+  display: block;
+  padding-left: 15px;
+  font-size: 12px !important;
+  background-size: 18px;
+  margin-top: 15px;
+}
+
+.iconowhat2 {
+  background-image: url(../img/KER_SitioWeb_Logo_Whatsapp.png);
+  clear: both;
+  margin-top: 2px;
+  width: 189px;
+  float: right;
+  padding-bottom: 12px;
+  background-repeat: no-repeat;
+  display: block;
+  padding-left: 15px;
+  font-size: 12px !important;
+  background-size: 18px;
+}
+
+.linkreservas, .linkhoteles, .linkrestaurantes {
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  top: 41px;
+  left: 0;
+  background-color: #B8B8BA;
+  width: 200px;
+  text-align: left;
+  display: none;
+  padding: 10px;
+}
+
+.submenu a {
+  color: #000;
+  border-bottom: solid 1px #000;
+  padding: 10px;
+  display: block;
+}
+
+.submenu a:hover {
+  background-color: #000;
+  color: #B8B8BA;
+}
+
+.carousel1 img {
+  width: 100%;
+}
+
+.botonfact2 {
+  width: 211px !important;
+  color: #000 !important;
+  border: solid 1px #000 !important;
+  background-color: transparent !important;
+  background-image: url(../img/KER_HOTELES_BOTON_FACTSHEETS_Negro.png);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  padding: 6px 31px 6px 15px !important;
+  display: block;
+  text-align: left;
+  margin: 15px auto auto auto;
+  background-size: 15px;
+}
+
+.botonfact2:hover {
+  color: #fff !important;
+  background-image: url(../img/KER_HOTELES_BOTON_FACTSHEETS_Blanco.png);
+  border: solid 1px #000 !important;
+  background-color: #000 !important;
+}
+
+.linkmobile {
+  color: #fff;
+  text-align: center;
+  display: block;
+  padding: 2px;
+  margin-top: 3px;
+}
+
+.redesmobile {
+  padding: 3px 0 3px 0;
+}
+
+header .redesmobile li {
+  display: inline-block !important;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  width: auto !important;
+  border: none;
+  padding: 0 !important;
+  border: none !important;
+}
+
+header .redesmobile li img {
+  width: 31px;
+  height: auto;
+}
+
+@media (max-width: 500px) {
+  .stay .foto {
+    max-width: 100%;
+  }
+  .tax {
+    width: 29% !important;
+  }
+  .buscador, .buscador2, .fixbuscador {
+    position: relative !important;
+  }
+  footer .col4 {
+    padding: 10px;
+    background-color: #211d1f;
+  }
+  footer .col4 img {
+    width: 100px;
+  }
+  footer .col2, footer .col3 {
+    padding-left: 45px;
+  }
+  .volumen {
+    display: none;
+  }
+  .buscador .item, .buscador2 .item {
+    width: 100%;
+    margin: 0;
+  }
+  .buscador input, .buscador select {
+    width: 100%;
+  }
+  .buscador .nice-select, .buscador2 .nice-select {
+    width: 100%;
+  }
+  .buscador input[type="submit"] {
+    margin-top: 10px;
+  }
+  .buscador2 input, .buscador2 select {
+    width: 100%;
+  }
+  .buscador22 .nice-select, .buscador2 .nice-select {
+    width: 100%;
+  }
+  .buscador input[type="submit"] {
+    margin-top: 10px;
+  }
+  .buscador2 input[type="submit"] {
+    margin-top: 10px;
+  }
+  .buscador2 {
+    display: none;
+  }
+  .trip h1 {
+    font-size: 31px;
+  }
+  header {
+    position: relative;
+    background-color: #000;
+    padding: 15px;
+  }
+  header .logo img {
+    width: 100px;
+  }
+  .menu1 {
+    position: absolute;
+    top: 16px;
+    width: 100%;
+    background-color: #000;
+  }
+  header .col3 {
+    display: none;
+  }
+  header .menu li {
+    display: block;
+    width: 100%;
+  }
+  .menu1 {
+    left: 0;
+    top: -600px;
+    border-top: solid 1px #fff;
+  }
+  .activemenu {
+    top: 0;
+  }
+  header {
+    padding: 0;
+  }
+  header .logo {
+    padding: 15px;
+  }
+  header .menu li {
+    border-bottom: solid 1px #fff;
+    padding: 5px;
+  }
+  header .menu {
+    border: none;
+  }
+  header .menu li a:hover {
+    background-color: transparent;
+  }
+  #nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+    background-color: #fff;
+  }
+  .botonreservar, .botonreservar2 {
+    display: block;
+    margin-top: -4px;
+  }
+  .buscador {
+    display: none;
+  }
+  .iconomobile {
+    display: block;
+  }
+  .habitaciones .blanco h1 {
+    padding-top: 0px;
+  }
+  .habitaciones .blanco p {
+    padding: 0;
+  }
+  .habitaciones .gris h1 {
+    padding-top: 0px;
+  }
+  .habitaciones .gris p {
+    padding: 0;
+  }
+  .nopad {
+    padding: 0 !important;
+  }
+  .blanco, .gris {
+    margin-bottom: 31px;
+  }
+  .contacto_ker .col1 {
+    padding: auto;
+  }
+  .contacto_ker p {
+    padding-left: 31px;
+    padding-bottom: 31px;
+  }
+  .contacto_ker img {
+    display: none;
+  }
+  .contacto_ker .col2 {
+    padding: 21px 21px 31px 21px;
+  }
+  .contacto_ker .col1 {
+    padding-bottom: 31px;
+    padding-top: 31px;
+  }
+  .buscador_detalle {
+    min-height: 0;
+    padding-bottom: 15px;
+  }
+  .habitaciones_detalle .slick-slide img {
+    width: 100%;
+  }
+  .salones h1 {
+    margin-top: 31px;
+  }
+  .salones a {
+    margin: auto auto 10px auto;
+  }
+  .salones .fotos ul li {
+    width: 100%;
+  }
+  .salones .fotos {
+    padding-top: 21px;
+  }
+  .salones h1 {
+    padding-top: 0;
+  }
+  .halo .item .botones {
+    position: relative;
+  }
+  .halo a {
+    width: 118px;
+  }
+  .halo .item .botones {
+    padding: 21px 0 21px 0;
+  }
+  .bookingform {
+    width: 100%;
+    padding: 21px;
+    left: 0;
+    z-index: 99999;
+  }
+  .daterangepicker {
+    z-index: 999999999999 !important;
+  }
+  .bookingform, .bookingboton {
+    display: none !important;
+  }
+  .submenu {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    text-align: center;
+  }
+  footer .col-md-3 {
+    width: 100%;
+  }
+  footer .col-md-3 {
+    padding: 15px;
+  }
+  footer .col5 {
+    margin-left: 31px;
+  }
+  .salones p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wow {
+    animation-name: none !important;
+    visibility: visible !important;
+  }
+}
+
+/*# sourceMappingURL=main.map */
+.centrar-boton {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

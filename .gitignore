@@ -1,0 +1,7 @@
+vendor
+.idea
+.htaccess
+composer.lock
+ker-belgrano-hoteles/.htaccess
+ker-urquiza-hoteles/.htaccess
+ker-recoleta-hoteles/.htaccess

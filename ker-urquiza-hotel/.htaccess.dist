@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} \.(jpg|jpeg|png|gif|css|js|ico)$ [NC]
+RewriteRule ^en/(.*)$ $1 [R=301,L]
+RewriteCond %{REQUEST_URI} \.(jpg|jpeg|png|gif|css|js|ico)$ [NC]
+RewriteRule ^pt/(.*)$ $1 [R=301,L]
+
+#http:// => https://
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

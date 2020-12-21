@@ -1,0 +1,13 @@
+.iconito35 img {
+	float:right;
+	width: 130%;
+}
+
+@media (max-width:767px) {
+	.iconito35 img {
+		float:right;
+		width: 75%;
+		position: relative;
+		left: 0px;
+	}
+}

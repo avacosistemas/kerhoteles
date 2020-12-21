@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
+$font1:'Lato', sans-serif;
+$gris:#211d1f;
+body{padding:0px; margin:0; font-size:12px; font-family:$font1; color:$gris;}
+
+h1, h2, h3, h4, p, ul, li{padding:0; margin:0;}
+.right{float:right;}
+.left{float:left;}
+li{list-style:none;}
+.clear{clear:both;}
+button{outline:none;}
+a, a:hover{text-decoration:none; outline:none!important;}
+p{padding:0; margin:0;}
+
+.trans{-moz-transition: all 0.3s ease-in;
+  -webkit-transition: 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;}
+  
+header{position:fixed; top:0; left:0; width:100%; padding:21px 45px 21px 45px; z-index:999; @extend .trans;
+	.logo{
+		img{width:180px; height:auto;}
+		}
+	.redes{padding-top:21px;
+		li{display:inline-block; margin-left:5px; margin-bottom:15px;
+			img{width:31px; height:auto;}
+		}
+	}
+	.menu{text-align:center; border-bottom:solid 1px #fff;
+		li{display:inline-block; padding:10px 0 10px 0px;
+			a{color:#fff; font-size:15px; padding:10px 16px 10px 16px; @extend .trans;}
+			a:hover{background-color:#000;}
+		}
+	}
+	.col3{text-align:right;
+		a{color:#fff; font-size:16px;}
+	}
+}
+.fondoheader{background-color:#000;}
+.fixbuscador{position:fixed!important; top:142px; width:100%; z-index:9; height:85px;}
+.ui-widget-header{background-color:#000; border:none;}
+.ui-datepicker table{background-color:#000;}
+.ui-widget-content{background-color:#000; border:none;}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{background-color:#000; border:none; color:#fff;}
+.ui-datepicker td span, .ui-datepicker td a:hover{color:$gris;}
+.ui-datepicker .ui-datepicker-prev{background-image:url(../img/slider_ant.svg); background-repeat:no-repeat; background-size:21px; background-color:transparent!important; border:none!important;}
+.ui-datepicker .ui-datepicker-next{background-image:url(../img/slider_sig.svg); background-repeat:no-repeat; background-size:21px; background-color:transparent!important; border:none!important;}
+#ui-datepicker-div{z-index:99999999!important;}
+.buscador, .buscador2{
+	background-color:$gris; padding:21px; text-align:center; position:absolute; width:100%; bottom:0; left:0;
+	.item{display:inline-block; margin-right:21px; vertical-align:top;}
+	input[type="text"], select{background-color:transparent; padding:10px; font-size:16px; -webkit-appearance: none;
+-moz-appearance: none;
+appearance: none; border:none; border-bottom:solid 1px #fff; color:#fff;}
+	input[type="submit"]{color:$gris; border:none; display:block; padding:10px 21px 10px 21px; font-weight:700; background-color:#fff; @extend .trans;}
+	input[type="submit"]:hover{background-color:$gris; color:#fff;}
+	input[type="text"]{background-image:url(../img/calendar.png); background-repeat:no-repeat; background-position:95%; padding-right:45px;}
+	.nice-select{background-color:transparent; border:none; color:#fff; font-size:16px; border-bottom:solid 1px #fff; border-radius:0;}
+	.nice-select .list{background-color:$gris; border:none; border-radius:0; border-bottom:solid 1px #fff;}
+	.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus{background-color:#000; color:#fff;}
+}
+.buscador_detalle{
+	background-color:$gris; padding:21px; text-align:center; width:100%; bottom:0; left:0;
+	.item{width:100%; margin-bottom:21px; vertical-align:top;}
+	input[type="text"], select, input[type="email"], textarea{background-color:transparent; margin-bottom:10px; width:100%; padding:10px; font-size:16px; -webkit-appearance: none;
+-moz-appearance: none;
+appearance: none; border:none; border-bottom:solid 1px #fff; color:#fff;}
+	input[type="submit"]{color:$gris; width:100%; border:none; font-size:16px; display:block; padding:10px 21px 10px 21px; font-weight:700; background-color:#fff; @extend .trans;}
+	input[type="submit"]:hover{background-color:$gris; color:#fff;}
+	input[type="text"]{background-image:url(../img/calendar.png); width:100%; background-repeat:no-repeat; background-position:95%; padding-right:45px;}
+	.nice-select{background-color:transparent; border:none; width:100%; margin-bottom:15px; color:#fff; font-size:16px; border-bottom:solid 1px #fff; border-radius:0;}
+	.nice-select .list{background-color:$gris; border:none; border-radius:0; border-bottom:solid 1px #fff;}
+	.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus{background-color:#000; color:#fff;}
+	p{padding-top:21px; font-size:14px; padding-top:21px;}
+}
+.buscador2{position:relative;
+		li:first-child{display:none;}
+}
+.stay{
+	background-image:url(../img/01Home/Ker_Historic_SanTelmo_BsAs_Fondo_Stayawhile.jpg); background-attachment:fixed; background-size:cover; color:#fff;
+	h1{font-weight:300; font-size:43px; padding-top:80px; font-style:italic; letter-spacing:2px; text-align:center;}
+	p{font-size:15px; text-align:center; padding:21px 0 21px 0;}
+	h2{font-size:21px; text-align:center; padding-bottom:21px;
+		span{border-bottom:solid 1px #fff;}
+		}
+	a{background-color:$gris; color:#fff; width:160px; font-size:15px; display:block; margin:21px auto auto auto; text-align:center; padding:10px 15px 10px 15px; @extend .trans;}
+	a:hover{opacity:0.8;}
+	.foto{margin:31px 0 31px 0; max-width:80%; float:right;}
+	.col2{padding-right:0;}
+	.pad{width:80%; max-width:500px; margin:auto;}
+}
+
+.casco{
+	text-align:center;
+	h1{font-size:31px; text-align:center; font-weight:300; font-style:italic; padding:31px; letter-spacing:2px;}
+}
+.trip{padding:45px 0 45px 0;
+	.col-md-6{padding:0; margin:0;}
+}
+.banner1{margin-bottom:45px;}
+
+.hoteles{
+	h1{font-size:31px; text-align:center; font-weight:300; font-style:italic; padding:31px; letter-spacing:2px;}
+	.col-md-3{padding:0; margin:0; text-align:center;
+		img{display:block; margin:auto; width:160px;}
+		.barrita{height:1px; width:51px; margin:31px auto 15px auto; background-color:$gris;}
+		h2{text-align:center; font-style:italic; font-size:14px;}
+	}
+	.col1{background-color:#dddddb;}
+	.col2{background-color:#c9c9c7;}
+	a{color:$gris; min-height:331px; display:block; padding:80px; @extend .trans;}
+	a:hover{background-color:$gris; color:#fff;
+		.barrita{background-color:#fff;}
+	}
+}
+.trip{text-align:center;
+	.icono{display:block; margin:auto; margin-top:31px;}
+	h1{font-style:italic; font-size:61px; padding:15px 0 15px 0; font-weight:300;
+		span{display:block;}
+	}
+	.barrita{height:1px; background-color:$gris; width:120px; margin:10px auto 10px auto;}
+}
+footer{
+	background-image:url(../img/KER_Website_FOOTER.jpg); font-size:14px; background-size:cover; color:#fff;
+	.col1{padding-top:31px; padding-left:45px;
+		p{color:#000; margin-bottom:21px;}
+		a{color:#000; display:block; @extend .trans;}
+			a:hover{color:$gris;}
+	}
+	.col2{padding-top:31px;}
+	.col3{padding-top:31px;}
+	ul{
+		li{margin-bottom:10px;
+			a{color:#000; @extend .trans;}
+			a:hover{color:$gris;}
+		}
+	}
+	.col4{background-color:#000;
+		img{display:block; width:231px; margin:45px auto 45px auto;}
+	}
+	.col-md-3{padding-top:60px; padding-bottom:60px; width:20%;}
+	.col5{
+		.redes{
+			li{display:inline-block; margin-right:10px;
+				img{width:31px; height:auto; @extend .trans;}
+				img:hover{opacity:0.8;}
+			}
+		}
+	}
+}
+.copy{
+	padding:10px; background-color:#939498; text-align:center;
+	a{color:#fff; font-style:italic;}
+}
+.volumen {
+  position: absolute;
+  bottom: 200px;
+  right: 51px;
+  z-index: 99999999999999999;
+  color: #000;
+  width: 20px;
+  height: 20px;
+  font-size: 45px;
+  cursor: pointer; }
+
+.vol1 {
+  display: block; }
+  .vol2{display:none;}
+  .videohome{position:relative;}  
+#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+  width: 55px;
+  height: 36px;
+  position: relative;
+  margin: 9px 0 0 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 33px;
+  background: #000;
+  border-radius: 16px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 12px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 22px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 32px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 28px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 28px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.iconomobile{float:right; right:0px; z-index:9999; position:absolute; top:10px; display:none;}  
+.botonreservar, .botonreservar2{display:none; font-size:15px; font-weight:700; background-color:$gris; padding:10px; text-align:center; cursor:pointer; color:#fff;}
+
+
+.slick-slide img{margin:auto;}
+	.slick-prev{position:absolute; top:45%; left:15px; width:16px; height:35px; border:none; background-color:$gris; border-radius:60px; color:transparent; z-index:9; background-repeat:no-repeat; background-image:url("../img/flechaizq.png"); background-size:10px; background-position:center; width:36px;}
+    .slick-next{position:absolute; top:45%; right:15px; width:16px; height:35px; border:none; background-color:$gris; border-radius:60px; z-index:9; background-repeat:no-repeat; color:transparent; background-image:url("../img/flechader.png"); background-size:10px; background-position:center; width:36px;}
+    .slick-dots{display:none!important;}
+    .slick-prev:hover, .slick-next:hover{opacity:0.8;}
+    
+.habitaciones{
+	.col-md-6{padding:31px; margin:0;
+		img{width:100%;}
+	}
+	.blanco{
+		h1{color:$gris; font-size:43px; margin-bottom:15px; font-style:italic; text-align:center; padding-top:100px; font-weight:300;}
+		p{font-size:14px; color:$gris; text-align:center; padding:0 100px 0 100px;}
+		a{background-color:$gris; color:#fff; width:160px; font-size:15px; display:block; margin:21px auto auto auto; text-align:center; padding:10px 15px 10px 15px; @extend .trans;}
+		a:hover{opacity:0.8;}
+	}
+	.gris{background-color:$gris;
+		h1{color:#fff; font-size:43px; margin-bottom:15px; font-style:italic; text-align:center; padding-top:100px; font-weight:300;}
+		p{font-size:14px; color:#fff; text-align:center; padding:0 100px 0 100px;}
+		a{background-color:#fff; color:$gris; width:160px; font-size:15px; display:block; margin:21px auto auto auto; text-align:center; padding:10px 15px 10px 15px; @extend .trans;}
+		a:hover{opacity:0.8;}
+	}
+}
+.cabcontacto{
+	img{width:100%;}
+}
+
+.contacto_ker{
+	background-image:url(../img/KER_Website_CONTACTO_Fondo.jpg); background-size:cover; padding-top:31px; padding-bottom:31px;
+	p{color:#fff; font-size:15px; padding-left:60px; padding-bottom:60px;}
+	.col-md-6{padding:0; margin:0;}
+	img{width:95%;}
+	.col1{padding:121px 31px 31px 31px;
+		a{color:#fff; @extend .trans;}
+		a:hover{color:$gris;}
+		.icono{background-color:#000; padding:31px 21px 31px 21px;
+			img{display:block; margin:auto;}
+		}
+		.item{
+			margin-bottom:60px;
+			li{font-size:15px;}
+			a{color:#000;}
+			a:hover{opacity:0.8;}
+			i{margin-right:10px;}
+		}
+	}
+	.col2{padding:60px; background-color:$gris; color:#fff; padding-bottom:70px;
+		h1{color:#fff; margin-bottom:15px; font-size:31px; font-weight:300; letter-spacing:1px; font-style:italic;
+			span{border-bottom:solid 1px #fff;}
+		}
+		label{color:#fff; display:block; font-size:14px; padding-top:10px;}
+		input[type="text"], input[type="email"], textarea{border:solid 1px #fff; color:#000; width:100%; padding:10px; font-size:16px;}
+		textarea{margin-bottom:15px;}
+		a{color:#fff; text-decoration:underline;}
+		a:hover{text-decoration:none;}
+		input[type="submit"]{color:$gris; border:none; display:block; padding:10px 21px 10px 21px; font-weight:700; background-color:#fff; @extend .trans;}
+		input[type="submit"]:hover{background-color:$gris; color:#fff;}
+	}
+	.nice-select{width:100%!important; margin-bottom:5px;}
+}
+
+.habitaciones_detalle{
+	padding:31px 0 31px 0; min-height:558px;
+	h1{font-size:31px; margin-bottom:21px;
+		span{font-weight:800;}
+	}
+	h2{font-size:31px; margin-top:21px; border-bottom:solid 1px rgba(0,0,0,0.1); margin-bottom:21px; padding-bottom:10px;
+		span{font-weight:800;}
+	}
+	.borde{border-right:solid 1px rgba(0,0,0,0.1);}
+	p{font-size:14px; padding-bottom:45px;}
+	.foto{margin-top:31px;}
+	h3{font-size:26px; margin-top:0px; text-align:left; border-bottom:solid 1px rgba(0,0,0,0.1); color:#fff; margin-bottom:21px; padding-bottom:10px;
+		span{font-weight:800;}
+	}
+}
+#CDSWIDSSP{width:80%!important; margin:15px auto auto auto!important;}
+
+.hoteles2{
+	img{width:100%; filter:grayscale(100); @extend .trans;}
+	img:hover{filter:grayscale(0);}
+}
+
+.promociones{padding-bottom:31px; padding-top:31px;
+	a{width:80%; margin:auto; border:solid 1px #000; color:#000; margin-bottom:31px; padding:10px 15px 10px 15px; text-align:center; display:block; margin-top:15px; font-size:16px; @extend .trans;}
+	a:hover{background-color:#000; color:#fff;}
+	h1{letter-spacing:2px; margin-top:31px; margin-bottom:21px; font-size:15px; margin-left:15px;
+		span{font-style:italic;}
+	}
+}
+
+.news{background-image:url(../img/KER_Promociones_Rose_Halo_Modulo-gris.jpg);
+	.pad{padding:31px; text-align:center;}
+	h1{color:#fff;}
+	p{color:#fff; font-size:14px; padding:21px;}
+	input[type="email"]{background-color:rgba(0,0,0,0.6); padding:10px; border:solid 1px #fff; color:#fff; font-size:16px;}
+	input[type="button"]{background-color:#000; color:#fff; padding:11px 16px 11px 16px; font-size:16px; border:none;}
+	.col-md-6{padding:0; margin:0;}
+}
+
+.promotitulo{font-size:16px; border-bottom:solid 1px $gris; padding-bottom:10px; margin-top:31px; margin-bottom:31px;}
+.spa{
+	h1{font-style:italic; font-size:31px; text-align:center; margin-bottom:21px; font-weight:300; letter-spacing:2px;}
+	a{display:block; width:200px; font-size:16px; text-align:center; background-color:#000; color:#fff; padding:10px 15px 10px 15px; margin:auto; @extend .trans;}
+	a:hover{background-color:$gris;}
+	img{width:100%;}
+	.pad{padding:31px;}
+}
+.halo{
+	h1{font-style:italic; font-size:31px; background-color:#000; padding:45px; color:#fff; text-align:center;}
+	a{display:inline-block; width:200px; font-size:16px; text-align:center; background-color:#000; color:#fff; padding:10px 15px 10px 15px; margin-right:15px; @extend .trans;}
+	a:hover{background-color:$gris;}
+	img{width:100%;}
+	.pad{padding:31px;}
+	.item{position:relative;
+		.titulo{position:absolute; bottom:200px; color:#fff; width:100%; text-align:center; left:0; right:0; margin:auto; display:none;}
+		.botones{position:absolute; bottom:60px; color:#fff; width:100%; text-align:center; left:0; right:0; margin:auto;}
+	}
+}
+
+.salones{text-align:center;
+	img{width:100%;}
+	h1{color:#000; font-weight:300; letter-spacing:2px; font-style:italic; font-size:31px; text-align:center; padding-top:200px; margin-bottom:15px;}
+	p{color:#000; font-size:15px; text-align:center; padding-bottom:31px;}
+	a{display:inline-block; width:231px; font-size:16px; text-align:center; background-color:#000; color:#fff; padding:10px 15px 10px 15px; margin-right:15px; @extend .trans;}
+	a:hover{background-color:$gris; color:#fff;}
+	.fotos{
+		ul{
+			li{display:inline-block; width:19.8%;
+				img{width:100%;}
+			}
+		}
+	}
+	.col-md-6{padding:0; margin:0;
+		img{display:block; width:100%;}
+	}
+}
+
+.bookingform{
+	position:absolute; top:200px; left:100px; width:300px; background-color:rgba(238,237,245,0.9); padding:15px;
+	h1{font-size:12px; cursor:pointer;}
+	h2{font-size:37px; cursor:pointer;}
+	h3{font-size:11px;}
+	.fecha{float:left; padding:15px; background-color:#d6d5dd; text-align:center; margin:0 10px 10px 0; width:125px;}
+	.fecha:hover{background-color:#211D1F; color:#fff;}
+	input[type="submit"]{background-color:#000; color:#fff; border:none; text-align:center!important; width:100%; padding:10px; display:block; font-size:14px;}
+	select{border:none; background-color:#D6D5DD; padding:10px; font-size:16px;}
+	.nice-select{background-color:#D6D5DD!important; width:100%!important; margin-bottom:10px;}
+	.x{cursor:pointer; position:absolute; top:10px; right:10px; font-weight:bold; font-size:14px; display:none}
+}
+.bookingboton{position:fixed; top:143px; right:56px; z-index:999999; background-color:#fff; color:#000; display:none; width:150px; text-align:center; padding:10px; cursor:pointer;}
+.bookingclass{display:none; position:fixed; top:143px; right:56px; z-index:9999999; left:auto;}
+
+
+
+.kerhoteles{
+	padding:31px; text-align:center;
+	h1{font-style:italic; font-size:31px; text-align:center; margin-bottom:21px; font-weight:300; letter-spacing:2px;}
+	p{font-size:14px;}
+}
+.spa2{
+	h1{font-size:31px; text-align:center; font-weight:300; font-style:italic; padding:31px; letter-spacing:2px;}
+	.col-md-3{padding:0; margin:0; text-align:center;
+		img{display:block; margin:auto; width:160px;}
+		h2{text-align:center; font-style:italic; font-size:14px;}
+	}
+	.col1{background-color:#91CDA7;
+		a{color:$gris;}
+		/*a:hover{background-color:#203629;}*/
+		.barrita{height:1px; width:51px; margin:31px auto 15px auto; background-color:#203629;}
+	}
+	.col2{background-color:#203629;
+		a{color:#91CDA7;}
+		/*a:hover{background-color:#91CDA7;}*/
+		.barrita{height:1px; width:51px; margin:31px auto 15px auto; background-color:#91CDA7;}
+	}
+	a{min-height:331px; display:block; padding:80px; @extend .trans;}
+	a:hover{
+		opacity:0.8;
+	}
+	.boton{background-color:#000; color:#fff; padding:10px 21px 10px 21px; width:100px; text-align:center; display:block; margin:31px auto auto auto;}
+}
+.botonconsulta{background-color:#000; color:#fff; padding:10px 21px 10px 21px; width:100px; text-align:center; display:block; margin:0 auto 61px auto;}
+.botonconsulta:hover{color:#fff; opacity:0.8;}
+
+.linkreservas, .linkhoteles, .linkrestaurantes{position:relative;}
+.submenu{position:absolute; top:41px; left:0; background-color:#B8B8BA; width:200px; text-align:left; display:none; padding:10px;
+	a{color:#000; border-bottom:solid 1px #000; padding:10px; display:block;}
+	a:hover{background-color:#000; color:#B8B8BA;}
+}
+@media (max-width: 500px) {
+	.stay .foto{max-width:100%;}
+	.buscador, .buscador2, .fixbuscador{position:relative!important;}
+	footer .col4{padding:10px; background-color:$gris;}
+	footer .col4 img{width:100px;}
+	footer .col2, footer .col3{padding-left:45px;}
+	.volumen{display:none;}
+	.buscador .item, .buscador2 .item{width:100%; margin:0;}
+	.buscador input, .buscador select{width:100%;}
+	.buscador .nice-select, .buscador2 .nice-select{width:100%;}
+	.buscador input[type="submit"]{margin-top:10px;}
+	.buscador2 input, .buscador2 select{width:100%;}
+	.buscador22 .nice-select, .buscador2 .nice-select{width:100%;}
+	.buscador input[type="submit"]{margin-top:10px;}
+	.buscador2 input[type="submit"]{margin-top:10px;}
+	.buscador2{display:none;}
+	.trip h1{font-size:31px;}
+	header{position:relative; background-color:#000; padding:15px;}
+	header .logo img{width:100px;}
+	.menu1{position:absolute; top:16px; width:100%; background-color:#000;}
+	header .col3{display:none;}
+	header .menu li{display:block; width:100%;}
+	.menu1{left:0; top:-600px; border-top:solid 1px #fff;}
+	.activemenu{top:0;}
+	header{padding:0;
+		.logo{padding:15px;}
+	}
+	header .menu li{border-bottom:solid 1px #fff; padding:5px;}
+	header .menu{border:none;}
+	header .menu li a:hover{background-color:transparent;}
+	#nav-icon1 span, #nav-icon3 span, #nav-icon4 span{background-color:#fff;}
+	.botonreservar, .botonreservar2{display:block; margin-top:-4px;}
+	.buscador{display:none;}
+	.iconomobile{display:block;}
+	.habitaciones .blanco h1{padding-top:0px;}
+	.habitaciones .blanco p{padding:0;}
+	.habitaciones .gris h1{padding-top:0px;}
+	.habitaciones .gris p{padding:0;}
+	.nopad{padding:0!important;}
+	.blanco, .gris{margin-bottom:31px;}
+	.contacto_ker .col1{padding:auto;}
+	.contacto_ker p{padding-left:31px; padding-bottom:31px;}
+	.contacto_ker img{display:none;}
+	.contacto_ker .col2{padding:21px 21px 31px 21px;}
+	.contacto_ker .col1{padding-bottom:31px; padding-top:31px;}
+	.buscador_detalle{min-height:0; padding-bottom:15px;}
+	.habitaciones_detalle{
+		.slick-slide img{width:100%;}
+	}
+	.salones h1{margin-top:31px;}
+	.salones a{margin:auto auto 10px auto;}
+	.salones .fotos ul li{width:100%;}
+	.salones .fotos{padding-top:21px;}
+	.salones h1{padding-top:0;}
+	.halo .item .botones{position:relative;}
+	.halo a{width:118px;}
+	.halo .item .botones{padding:21px 0 21px 0;}
+	.bookingform{width:100%; padding:21px; left:0; z-index:99999;}
+	.daterangepicker{z-index:999999999999!important;}
+	.bookingform, .bookingboton{display:none!important;}
+	.submenu{position:relative; top:auto; left:auto; width:100%; text-align:center;}
+	}  
+@media screen and (max-width: 800px) {
+    .wow{
+        animation-name: none !important;
+        visibility: visible !important;
+    }
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
