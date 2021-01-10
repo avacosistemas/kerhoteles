@@ -90,7 +90,8 @@ En cada una de nuestras casas contamos con un spa totalmente equipado, donde nue
 	        </div>
 	        
 	        <div class="col-md-3 col1 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-		        <a href="https://kerrecoleta.com.ar/spa.php" target="_blank">
+		        <!--<a href="https://kerrecoleta.com.ar/spa.php" target="_blank">-->
+			    <a href="https://kerrecoleta.com.ar/kerrecoleta-main/spa.php" target="_blank">
 			    <img src="img/06_SPA/KER_WebHoteles_SPA_LogoArmonia_OSCURO.svg">
 		        <div class="barrita"></div>
 		        <h2>KER RECOLETA</h2>
@@ -98,7 +99,8 @@ En cada una de nuestras casas contamos con un spa totalmente equipado, donde nue
 	        </div>
 	        
 	        <div class="col-md-3 col2 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.9s">
-		        <a href="https://kerbelgrano.com.ar/spa.php" target="_blank">
+		        <!--<a href="https://kerbelgrano.com.ar/spa.php" target="_blank">-->
+			<a href="https://kerbelgrano.com.ar/kerbelgrano-main/spa.php" target="_blank">
 			    <img src="img/06_SPA/KER_WebHoteles_SPA_LogoArmonia_CLARO.svg">
 		        <div class="barrita"></div>
 		        <h2>KER BELGRANO</h2>
@@ -106,7 +108,8 @@ En cada una de nuestras casas contamos con un spa totalmente equipado, donde nue
 	        </div>
 	        
 	        <div class="col-md-3 col1 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s">
-		        <a href="http://kerurquiza.com.ar/spa.php" target="_blank">
+		        <!--<a href="http://kerurquiza.com.ar/spa.php" target="_blank">-->
+			<a href="http://kerurquiza.com.ar/kerurquiza-main/spa.php" target="_blank">
 			    <img src="img/06_SPA/KER_WebHoteles_SPA_LogoArmonia_OSCURO.svg">
 		        <div class="barrita"></div>
 		        <h2>KER URQUIZA</h2>
