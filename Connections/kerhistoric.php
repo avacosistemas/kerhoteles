@@ -2,10 +2,11 @@
 # FileName="Connection_php_mysql.htm"
 # Type="MYSQL"
 # HTTP="true"
-$hostname_kerhistoric = "localhost:3306";
-$database_kerhistoric = "pdhcs_ker";
-$username_kerhistoric = "2020";
-$password_kerhistoric = "Cg2!n9p5";
+
+$hostname_kerhistoric = "localhost";
+$database_kerhistoric = "c2070104_kerhot";
+$username_kerhistoric = "c2070104_kerhot";
+$password_kerhistoric = "voso94MEta";
 $kerhistoric = mysqli_connect($hostname_kerhistoric, $username_kerhistoric, $password_kerhistoric);
 
 

@@ -69,8 +69,9 @@
 	        <div class="col-md-6">
 		        <div class="menu1">
 		        <ul class="menu">
-			        <li><a href="promociones.php">PROMOCIONES</a></li>
-			        <li><a href="experiencias.php">EXPERIENCIAS</a></li>
+			        <!--<li><a href="promociones.php">PROMOCIONES</a></li>-->
+					 <li><a href="promociones_Whatsapp.php">PROMOCIONES</a></li>
+			        <!--<li><a href="experiencias.php">EXPERIENCIAS</a></li>-->
 			        <li><a href="index.php#ubicacion">UBICACI&Oacute;N</a></li>
 			        <li class="linkreservas"><a href="javascript:void();">RESERVAS</a>
 			        	<div class="submenu" id="menureservas">
@@ -93,7 +94,7 @@
 			        </li>
 			        <li class="linkrestaurantes"><a href="javascript:void();">RESTAURANTES</a>
 			        	<div class="submenu" id="menurestaurantes">
-				        	<a href="http://kerrecoleta.com.ar/citrino.php" target="_blank">Citrino</a>
+				        	<a href="http://kerrecoleta.com.ar/kerrecoleta-main/citrino.php" target="_blank">Citrino</a>
 				        	<a href="https://www.kersantelmo.com.ar/halo.php" target="_blank">Halo</a>
 			        	</div>
 			        </li>

@@ -3,8 +3,9 @@
 	        
 	        <div class="col-md-3 col2">
 		        <ul>
-			        <li><a href="promociones.php">PROMOCIONES</a></li>
-			        <li><a href="#">EXPERIENCIAS</a></li>
+			        <!--<li><a href="promociones.php">PROMOCIONES</a></li>-->
+                   <li><a href="promociones_Whatsapp.php">PROMOCIONES</a></li>
+			        <!--<li><a href="#">EXPERIENCIAS</a></li>-->
 			        <li><a href="#">UBICACI&Oacute;N</a></li>
 			        <li><a href="https://reservations.travelclick.com/110467#/guestsandrooms" target="_blank">RESERVAS</a></li>
 			        <li><a href="contacto.php">CONTACTO</a></li>
