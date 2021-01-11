@@ -52,6 +52,7 @@ Consultanos para reservar tu evento en Ker Hoteles.
 		       <img src="img/2/eventos_3.jpg" alt="KER_WebHoteles_EVENTOS_02" class="img-responsive" />
 	       </div>
         
+		   <?php include("mensaje_whatsapp.php");?>   
         <?php include("footer.php");?>
 <script src="js/jquery.bxslider1/jquery.bxslider.js"></script>
 		<link rel="stylesheet" href="js/jquery.bxslider1/jquery.bxslider.css">

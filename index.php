@@ -218,6 +218,7 @@ A medida que sus integrantes se convirtieron en profesionales arquitectos y deco
         </form>
         </div><!--  -->
         
+		<?php include("mensaje_whatsapp.php");?>   
         <?php include("footer.php");?>
         
         

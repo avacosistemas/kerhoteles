@@ -161,6 +161,7 @@ En cada una de nuestras casas contamos con un spa totalmente equipado, donde nue
         </form>
         </div><!--  -->
         
+		<?php include("mensaje_whatsapp.php");?>   
         <?php include("footer.php");?>
         
         

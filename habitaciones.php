@@ -148,7 +148,7 @@ También un sofá para mayor comodidad.</p>
         </div>
         
         
-        
+        <?php include("mensaje_whatsapp.php");?>   
         <?php include("footer.php");?>
 <script src="js/jquery.bxslider1/jquery.bxslider.js"></script>
 		<link rel="stylesheet" href="js/jquery.bxslider1/jquery.bxslider.css">
