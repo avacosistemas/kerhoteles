@@ -1,46 +1,34 @@
-<?php 
+<?php include("header.php");
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+$query_promociones = "SELECT * FROM promociones where publicado = 'Y' order by orden";
+$promociones = mysqli_query($kerhistoric, $query_promociones) or die(mysqli_error());
+$row_promociones = mysqli_fetch_assoc($promociones);
 
 
-include("header.php");
 
 $query_sliders = "SELECT * FROM sliders order by orden asc";
 $sliders = mysqli_query($kerhistoric, $query_sliders) or die(mysqli_error());
 $row_sliders = mysqli_fetch_assoc($sliders);
 $totalRows_sliders = mysqli_num_rows($sliders);
 ?>
+
         
         <div class="hidden-xs" style="position:relative">
         <img src="img/KER_Boton_Tax_free.jpg" class="tax" style="position:absolute; bottom:0px; z-index:99; right:0; width:18%;">
-        <ul class="bxslider2"><!-- slider -->
-       
+        <ul class="bxslider2"><!-- slider -->      
         <?php do{ ?>
 		<li><img src="img_sliders/<?php echo $row_sliders['foto_desktop']; ?>"></li>
-        <?php } while ($row_sliders = mysqli_fetch_assoc($sliders)); ?>
-        
+        <?php } while ($row_sliders = mysqli_fetch_assoc($sliders)); ?>      
 		</ul><!-- slider -->
 		</div>
-        
-        
-<?php 
-$query_sliders = "SELECT * FROM sliders order by orden asc";
-$sliders = mysqli_query($kerhistoric, $query_sliders) or die(mysqli_error());
-$row_sliders = mysqli_fetch_assoc($sliders);
-$totalRows_sliders = mysqli_num_rows($sliders);
-?>        
-        
-		
+             
 		<div class="hidden-md hidden-lg hidden-sm" style="position:relative;">
 		<img src="img/KER_Boton_Tax_free.jpg" class="tax" style="position:absolute; bottom:0px; z-index:99; right:0; width:28%;">
 		<ul class="bxslider"><!-- slider -->	
         <?php do{ ?>
 		<li><img src="img_sliders/<?php echo $row_sliders['foto_mobile']; ?>"></li>
 		<?php } while ($row_sliders = mysqli_fetch_assoc($sliders)); ?>
-		</ul><!-- slider -->
-        
-        
+		</ul><!-- slider -->      
 		</div>
 		
 		<div class="botonreservar2 hidden-lg hidden-sm hidden-md">RESERVAR</div>
@@ -81,20 +69,26 @@ $totalRows_sliders = mysqli_num_rows($sliders);
         </div>
         <div class="covid" style="background-color:#A6A6A4; text-align:center; font-size:16px;"><a href="KER_Protocolo_Covid-19.pdf" target="_blank" style="color:#fff; display:block; padding:15px;">VER PROTOCOLO COVID-19 | Programa Stay Safe in Ker</a></div>
         
-        
-        
-<?php 
-include "san_telmo.php"; 
-include "recoleta.php"; 
-include "belgrano.php"; 
-include "urquiza.php"; 
-?>
-        
-       
-        
-        
-        
-        
+        <div class="promociones">
+	        <div class="container">
+<?php if(mysqli_num_rows($promociones)){ ?>            
+<?php $i=0; do{ $i++;?>            
+		        <div class="col-md-4">
+			        <a href="promociones_detalle.php?id=<?php echo $row_promociones['Id']; ?>" class="bordeimagen" ><img src="img_promociones/2021/<?php echo $row_promociones['foto']; ?>" class="img-responsive"></a>
+					<?php if($row_promociones['link']!=''){?>
+			        <a href="<?php echo $row_promociones['link']; ?>" target="_blank">VER M&Aacute;S</a>
+			        <?php } else {?>
+			        <a href="promociones_detalle.php?id=<?php echo $row_promociones['Id']; ?>">VER M&Aacute;S</a>
+			        <?php } ?>
+		        </div>
+		        <?php if($i==3){echo '<div class="clear"></div>'; $i=0;}?>
+<?php } while ($row_promociones = mysqli_fetch_assoc($promociones)); } ?>
+
+	        </div>
+        </div>
+          
+<?php include("mensaje_whatsapp.php");?>   
+		  
         <?php include("footer.php");?>
 <script src="js/jquery.bxslider1/jquery.bxslider.js"></script>
 		<link rel="stylesheet" href="js/jquery.bxslider1/jquery.bxslider.css">

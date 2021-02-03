@@ -4,15 +4,14 @@ $query_promociones = "SELECT * FROM promociones where Id = ".intval($_GET['id'])
 $promociones = mysqli_query($kerhistoric, $query_promociones) or die(mysqli_error());
 $row_promociones = mysqli_fetch_assoc($promociones);
 
+
+$query_promociones_texto = "SELECT * FROM promociones_mensajes where ID_PROMOCION = ".intval($_GET['id']). " order by orden";
+$promociones_texto = mysqli_query($kerhistoric, $query_promociones_texto) or die(mysqli_error());
+$row_promociones_texto = mysqli_fetch_assoc($promociones_texto);
+
 ?>
 <?php if(mysqli_num_rows($promociones)){ ?>        
-        
-      				
-      				
-      				
-      				
-        
-        
+             
         <div class="hidden-xs">
         <ul class="bxslider2"><!-- slider -->
 		<li><img src="img/_habitaciones/Banner_01.jpg"></li>
@@ -28,40 +27,58 @@ $row_promociones = mysqli_fetch_assoc($promociones);
 		<li><img src="img/_habitaciones/Banner_03.jpg"></li>
 		</ul><!-- slider -->
 		</div>
-		
-		
-	        
+			        
         <div class="habitaciones_detalle">
 	        <div class="container">
 		        <div class="col-md-12"><h1><?php echo $row_promociones['titulo'.$lengua]; ?></h1></div>
 	        <div class="col-md-8 borde">
-		        <div class="item"><img src="img_promociones/<?php echo $row_promociones['foto_detalle']; ?>" alt="Classic_00" class="img-responsive"></div>
+		        <div class="item"><img src="img_promociones/2021/<?php echo $row_promociones['foto_detalle']; ?>" alt="Classic_00" class="img-responsive"></div>
 			        
 		        <p style="padding-top:21px;">
 			       <?php echo smrFormatStr($row_promociones['texto'.$lengua]); ?>
 		        </p>
 	        </div>
+
 	        <div class="col-md-4">
-		        
-		        <div class="buscador_detalle"><!--  -->
-		        <h3>CONSULTAR</span>
-        <form action="enviar_promocion.php" method="post">
-	        <input type="text" required name="nombre" placeholder="Nombre" style="background-image:none;">
-	        <input type="text" placeholder="Teléfono" name="tel" required>
-	        <input type="email" required name="email" placeholder="E-mail">
-	        <textarea rows="6" placeholder="Mensaje" name="mensaje" ></textarea>
-	        <input type="submit" value="ENVIAR">
-          <input type="hidden" name="promocion" value="<?php echo $row_promociones['titulo'.$lengua]; ?>" id="hiddenField" />
-          <input type="hidden" name="eml" value="<?php echo $row_promociones['Id']; ?>" id="hiddenField" />          
-        </form>
-        </div><!--  -->
-	        </div>
-	        <div class="clear"></div>
-	        </div>
-	        
-        </div>
+
+                	
+				    
+					 <?php if ($_GET['id'] == 1) { ?>
+					<div class="buscador_detalle fondodetalle">					
+					<h3 style="text-align: center;">RESERVAR</span>
+					  <a href="https://reservations.travelclick.com/110467?DateIn=&DateOut=&Adults=Huespedes&languageid=2#/guestsandrooms" target="_blank"><input class="btn btn-sm colored" type="submit" value="Ker San Telmo" style="margin: 35px 0px 10px 0px" ></a>
+					  <a href="https://reservations.travelclick.com/73729?DateIn=&DateOut=&Adults=Huespedes&languageid=2#/guestsandrooms" target="_blank"><input class="btn btn-sm colored" type="submit" value="Ker Recoleta" style="margin: 15px 0px 10px 0px" ></a>
+					  <a href="https://reservations.travelclick.com/74787?DateIn=&DateOut=&Adults=Huespedes&languageid=2#/guestsandrooms" target="_blank"><input class="btn btn-sm colored" type="submit" value="Ker Belgrano" style="margin: 15px 0px 10px 0px" ></a>
+					  <a href="https://reservations.travelclick.com/73742?DateIn=&DateOut=&Adults=Huespedes&languageid=2#/guestsandrooms" target="_blank"><input class="btn btn-sm colored" type="submit" value="Ker Urquiza" style="margin: 15px 0px 0px 0px" ></a>		
+	                </div>
+	            	
+			
+	            <?php } else { ?>
+				<div class="buscador_detalle fondodetalle">
+					<h3 style="text-align: center;">Tarifas</span>
+					<br>
+					<br>	
+					<?php if(mysqli_num_rows($promociones_texto)){ ?>            
+					<?php $i=0; do{ $i++;?>        
+<div class="buscador_detalle fondodetalle" >					
+							<?php echo $row_promociones_texto['hotel']; ?> <H5><?php echo $row_promociones_texto['mensaje']; ?>
+<br>							
+<a href="<?php echo $row_promociones_texto['mensaje_wsp']; ?>" target="_blank"><b><?php echo $row_promociones_texto['mensaje_celular']; ?></b></a></H5>	
+</div>							
+								<br>							
+					<?php } while ($row_promociones_texto = mysqli_fetch_assoc($promociones_texto)); } ?>	
+    					</h3>
+						<?php } ?>	         
+				 </div>
+
+	    </div>
+	    <div class="clear"></div>
+	    </div>	        
+    </div>
         
-        
+
+
+		   
 <?php         
 $query_promociones = "SELECT * FROM promociones where Id != '".intval($_GET['id'])."' order by orden";
 $promociones = mysqli_query($kerhistoric, $query_promociones) or die(mysqli_error());
@@ -73,8 +90,8 @@ $row_promociones = mysqli_fetch_assoc($promociones);
 	        <div class="container">
 		        <div class="promotitulo">M&Aacute;S PROMOCIONES</div>
 <?php do{ ?>            
-		        <div class="col-md-4">
-			        <img src="img_promociones/<?php echo $row_promociones['foto']; ?>" class="img-responsive" />
+		        <div class="col-md-4 bordeimagen">
+					<a href="promociones_detalle.php?id=<?php echo $row_promociones['Id']; ?>" class="bordeimagen"><img src="img_promociones/2021/<?php echo $row_promociones['foto']; ?>" class="img-responsive"></a>
 			        <a href="promociones_detalle.php?id=<?php echo $row_promociones['Id']; ?>">VER M&Aacute;S</a>
 		        </div>
 <?php } while ($row_promociones = mysqli_fetch_assoc($promociones));  ?>
@@ -83,7 +100,7 @@ $row_promociones = mysqli_fetch_assoc($promociones);
         
         
 <?php } ?>        
-        
+        <?php include("mensaje_whatsapp.php");?>
         <?php include("footer.php");?>
 <script src="js/jquery.bxslider1/jquery.bxslider.js"></script>
 		<link rel="stylesheet" href="js/jquery.bxslider1/jquery.bxslider.css">

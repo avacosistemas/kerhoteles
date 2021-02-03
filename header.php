@@ -58,6 +58,26 @@
                  src="https://www.facebook.com/tr?id=823360734875729&ev=PageView&noscript=1"/>
         </noscript>
         <!-- End Facebook Pixel Code -->
+
+		        		<!-- estilo de Botón de Wsp -->
+						<style>
+        .btn-whatsapp {
+			position: fixed;
+   			width: 45px;
+    		height: 45px;
+    		line-height: 45px;
+    		bottom: 30px;
+    		left: 30px;
+    		border-radius: 55px;
+    		box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+			z-index: 100;
+		}
+
+		.btn-whatsapp:hover {
+  			text-decoration: none;
+    		box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.4);
+		}
+    </style>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -78,8 +98,7 @@
 	        <div class="col-md-6">
 		        <div class="menu1">
 		        <ul class="menu">
-			        <!--<li><a href="promociones.php">PROMOCIONES</a></li>-->
-					 <li><a href="promociones_Whatsapp.php">PROMOCIONES</a></li>
+			        <li><a href="promociones.php">PROMOCIONES</a></li>
 			        <!--<li><a href="experiencias.php">EXPERIENCIAS</a></li>-->
 			        <li><a href="index.php#ubicacion">UBICACI&Oacute;N</a></li>
 			        <li class="linkreservas"><a href="javascript:void();">RESERVAS</a>

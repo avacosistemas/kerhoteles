@@ -36,6 +36,7 @@ header{position:fixed; top:0; left:0; width:100%; padding:21px 45px 21px 45px; z
 		a{color:#fff; font-size:16px;}
 	}
 }
+.fondodetalle{background-color:#000;}
 .fondoheader{background-color:#000;}
 .fixbuscador{position:fixed!important; top:142px; width:100%; z-index:9; height:85px;}
 .ui-widget-header{background-color:#000; border:none;}
@@ -73,6 +74,7 @@ appearance: none; border:none; border-bottom:solid 1px #fff; color:#fff;}
 	.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus{background-color:#000; color:#fff;}
 	p{padding-top:21px; font-size:14px; padding-top:21px;}
 }
+
 .buscador2{position:relative;
 		li:first-child{display:none;}
 }
