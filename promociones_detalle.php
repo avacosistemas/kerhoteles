@@ -27,6 +27,8 @@ $row_promociones_texto = mysqli_fetch_assoc($promociones_texto);
 		<li><img src="img/_habitaciones/Banner_03.jpg"></li>
 		</ul><!-- slider -->
 		</div>
+
+<?php include("protocolo_covid.php");?>  
 			        
         <div class="habitaciones_detalle">
 	        <div class="container">

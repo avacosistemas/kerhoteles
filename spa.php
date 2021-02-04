@@ -69,98 +69,33 @@ do{
         </div><!--  -->
         
         
-        
+<?php include("protocolo_covid.php");?>          
         
         <div class="kerhoteles">
 	        <div class="container">
 	        <h1>ARMONIA SPA</h1>
-	        <p>Ofrecemos algo más que una estadía, ofrecemos una estadía memorable y placentera.
-En cada una de nuestras casas contamos con un spa totalmente equipado, donde nuestros huéspedes podrán hacer ejercicio, distenderse en la piscina o jacuzzi, o disfrutar de un masaje y/o un tratamiento facial.</p>
+   <div class="salones2" style="padding:0px;">
+        <div class="container">
+            <p>Por medidas de protocolo COVID-19 no est&aacute; habilitado el spa. Para consultas, comun&iacute;quese con nuestro canal de whatsapp
+				<!--<a href="https://wa.me/5491130174497" target="_blank" class="hidden-md hidden-lg linkmobile"><i class="fa fa-whatsapp"></i> <b>Pr&oacute;ximamente nuevas promociones, consulta por las actuales en nuestro canal de WhatsApp +54 9 11 3017-4497</b></a>-->
+				<a href="https://api.whatsapp.com/send?phone=5491130174497&text=Hola!%20Me%20contacto%20a%20través%20de%20la%20web%20y%20me%20gustaría%20realizar%20una%20consulta%20sobre%20Armonía%20SPA" target="_blank"><b>+54 9 11 3017-4497</b></a>
+			</p>
+            <div class="habitaciones">
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div> 
 	        </div>
         </div>
-        <img src="img/06_SPA/KER_WebHoteles_SPA_01.jpg" alt="KER_WebHoteles_SPA_01" class="img-responsive" />
-        <div class="spa2">
-	        
-	        <div class="col-md-3 col2 wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.2s">
-		        <a href="https://kersantelmo.com.ar/spa.php" target="_blank">
-			    <img src="img/06_SPA/KER_WebHoteles_SPA_LogoArmonia_CLARO.svg">
-		        <div class="barrita"></div>
-		        <h2>KER SAN TELMO</h2>
-		        </a>
-	        </div>
-	        
-	        <div class="col-md-3 col1 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-		        <!--<a href="https://kerrecoleta.com.ar/spa.php" target="_blank">-->
-			    <a href="https://kerrecoleta.com.ar/kerrecoleta-main/spa.php" target="_blank">
-			    <img src="img/06_SPA/KER_WebHoteles_SPA_LogoArmonia_OSCURO.svg">
-		        <div class="barrita"></div>
-		        <h2>KER RECOLETA</h2>
-		        </a>
-	        </div>
-	        
-	        <div class="col-md-3 col2 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.9s">
-		        <!--<a href="https://kerbelgrano.com.ar/spa.php" target="_blank">-->
-			<a href="https://kerbelgrano.com.ar/kerbelgrano-main/spa.php" target="_blank">
-			    <img src="img/06_SPA/KER_WebHoteles_SPA_LogoArmonia_CLARO.svg">
-		        <div class="barrita"></div>
-		        <h2>KER BELGRANO</h2>
-		        </a>
-	        </div>
-	        
-	        <div class="col-md-3 col1 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s">
-		        <!--<a href="http://kerurquiza.com.ar/spa.php" target="_blank">-->
-			<a href="http://kerurquiza.com.ar/kerurquiza-main/spa.php" target="_blank">
-			    <img src="img/06_SPA/KER_WebHoteles_SPA_LogoArmonia_OSCURO.svg">
-		        <div class="barrita"></div>
-		        <h2>KER URQUIZA</h2>
-		        </a>
-	        </div>
-	        
-	        
-	        
-	        
-	        
-	        <div class="clear"></div>
-        </div>
-        
-        <img src="img/06_SPA/KER_WebHoteles_SPA_02.jpg" alt="KER_WebHoteles_SPA_02" class="img-responsive" />
-        <div class="casco" id="ubicacion">
-	        <h1>Time to relax</h1>
-	        <a href="contacto.php?tipo=spa" class="botonconsulta">CONSULT&Aacute;</a>
-        </div>
         
         
         
+   
         
         
+ 
         
-        
-        <div class="buscador2" style="display:none;"><!--  -->
-        <form action="https://reservations.travelclick.com/110467#/guestsandrooms" method="get" target="_blank">
-	        <li class="item" style="display:inline-block;">
-	        	<select name="sucursal" class="sucursal">
-		        <option>Sucursal</option>
-		        <option value="110467">Ker Historic</option>
-		        <option value="73729">Ker Centro</option>
-		        <option value="73742">Ker Urban</option>
-		        <option value="74787">Ker House</option>
-	        </select>
-	        </li>
-	        <li class="item"><input type="text" id="from" name="DateIn"/></li>
-	        <li class="item"><input type="text" id="to" name="DateOut"/></li>
-	        <li class="item">
-	        <select name="Adults">
-		        <option>Huespedes</option>
-		        <option>1</option>
-		        <option>2</option>
-		        <option>3</option>
-	        </select>
-	        </li>
-	        <li class="item"><input type="submit" value="RESERV&Aacute;"></li>
-	        <input type="hidden" name="languageid" value="2">
-        </form>
-        </div><!--  -->
-        
+		<?php include("mensaje_whatsapp.php");?>   
         <?php include("footer.php");?>
         
         

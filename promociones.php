@@ -67,8 +67,9 @@ $totalRows_sliders = mysqli_num_rows($sliders);
         </form>
         </div><!--  -->
         </div>
-        <div class="covid" style="background-color:#A6A6A4; text-align:center; font-size:16px;"><a href="KER_Protocolo_Covid-19.pdf" target="_blank" style="color:#fff; display:block; padding:15px;">VER PROTOCOLO COVID-19 | Programa Stay Safe in Ker</a></div>
-        
+ 
+<?php include("protocolo_covid.php");?>  
+       
         <div class="promociones">
 	        <div class="container">
 <?php if(mysqli_num_rows($promociones)){ ?>            

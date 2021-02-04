@@ -120,7 +120,7 @@ do{
         
         </div>
         
-        <div class="covid" style="background-color:#A6A6A4; text-align:center; font-size:16px;"><a href="KER_Protocolo_Covid-19.pdf" target="_blank" style="color:#fff; display:block; padding:15px;">VER PROTOCOLO COVID-19 | Programa Stay Safe in Ker</a></div>
+<?php include("protocolo_covid.php");?>  
         
         <div class="kerhoteles">
 	        <div class="container">
@@ -218,6 +218,7 @@ A medida que sus integrantes se convirtieron en profesionales arquitectos y deco
         </form>
         </div><!--  -->
         
+		<?php include("mensaje_whatsapp.php");?>   
         <?php include("footer.php");?>
         
         
