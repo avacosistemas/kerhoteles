@@ -3,10 +3,9 @@
 	        
 	        <div class="col-md-3 col2">
 		        <ul>
-			        <!--<li><a href="promociones.php">PROMOCIONES</a></li>-->
-                   <li><a href="promociones_Whatsapp.php">PROMOCIONES</a></li>
+			        <li><a href="promociones.php">PROMOCIONES</a></li>
 			        <!--<li><a href="#">EXPERIENCIAS</a></li>-->
-			        <li><a href="#">UBICACI&Oacute;N</a></li>
+			        <li><a href="index.php#ubicacion">UBICACI&Oacute;N</a></li>
 			        <li><a href="https://reservations.travelclick.com/110467#/guestsandrooms" target="_blank">RESERVAS</a></li>
 			        <li><a href="contacto.php">CONTACTO</a></li>
 		        </ul>
@@ -14,7 +13,7 @@
 	        <div class="col-md-3 col3">
 		        <ul>
 			        <li><a href="habitaciones.php">HOTELES</a></li>
-			        <li><a href="halo.php">RESTAURANTES</a></li>
+			        <li><a href="https://www.kersantelmo.com.ar/halo.php">RESTAURANTES</a></li>
 			        <li><a href="salones.php">EVENTOS</a></li>
 			        <li><a href="spa.php">SPA</a></li>
 		        </ul>
